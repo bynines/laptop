@@ -128,6 +128,9 @@ else
   fancy_echo "Homebrew already installed. Skipping ..."
 fi
 
+fancy_echo "Uninstalling old Homebrew-Cask ..."
+brew uninstall --force brew-cask
+
 fancy_echo "Updating Homebrew formulas ..."
 brew update
 
