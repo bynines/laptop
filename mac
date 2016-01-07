@@ -158,7 +158,7 @@ brew unlink openssl && brew link openssl --force
 brew_install_or_upgrade 'libyaml'
 
 find_latest_ruby() {
-  rbenv install -l | grep -v - | tail -1 | sed -e 's/^[[:space:]]*//'
+  rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//'
 }
 
 ruby_version="$(find_latest_ruby)"
